@@ -3,7 +3,7 @@ name: Airbnb Availability Monitor
 on:
   schedule:
     # Cada hora (minuto 17 para evitar la congestión de la hora en punto). UTC.
-    - cron: "17 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
       test_telegram:
